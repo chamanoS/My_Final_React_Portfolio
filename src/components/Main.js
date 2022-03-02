@@ -137,7 +137,6 @@ const Main = () => {
          <DarkDiv   click={click}/>
             <Container>
             <PowerButton />
-            <LogoComponent theme={click ? 'dark' :'light'}/>
             <SocialIcons theme={click ? 'dark' :'light'} />
            
             <Center click={click}>
@@ -145,7 +144,7 @@ const Main = () => {
                 <span>click here</span>
             </Center>
 
-            <Contact target="_blank" to={{pathname:"mailto:codebucks27@gmail.com"}}>
+            <Contact target="_blank" to={{pathname:"mailto:chamano.sr@gmail.com"}}>
                 <motion.h2
                 initial={{
                     y:-200,

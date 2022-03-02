@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { DarkTheme } from '../components/Themes'
-
-
+import Me from '../assets/Images/logox.png'
 
 
 const Logo = styled.h1`
@@ -19,7 +18,7 @@ z-index:3;
 const LogoComponent = (props) => {
     return (
         <Logo color={props.theme}>
-          CB
+          <img className="pic" src={Me} width={75} height={75} alt="Profile Pic" />
         </Logo>
     )
 }

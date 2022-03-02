@@ -39,6 +39,9 @@ const play = keyframes`
     transform:scaleY(1);
 }
 `
+const PLAY = styled.h2`
+margin-top:-5px;
+`
 const Line = styled.span`
 background: ${props => props.theme.text};
 border: 1px solid ${props => props.theme.body};
@@ -53,7 +56,7 @@ margin:0 0.1rem
 const SoundBar = () => {
 
     const ref = useRef(null);
-    const [click, setClick] = useState(false);
+    const [click, setClick] = useState(true);
 
     const handleClick = () => {
         setClick(!click);
@@ -71,6 +74,8 @@ const SoundBar = () => {
             <Line click={click}/>
             <Line click={click}/>
             <Line click={click}/>
+            <PLAY>PLAY</PLAY>
+           
 
 
             <audio src={music} ref={ref}  loop />
