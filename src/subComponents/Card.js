@@ -97,11 +97,12 @@ const Item = {
 
 const Card = (props) => {
 
-    const {id, name, description, tags, demo, github} = props.data;
+    const {id, name, description, tags, img, demo, github} = props.data;
 
     return (
         <Box key={id} variants={Item}>
             <Title>{name}</Title>
+            <img src={img} alt="" />
             <Description>
                 {description}
             </Description>
@@ -120,7 +121,9 @@ const Card = (props) => {
                     <Github width={30} height={30} />
                 </Git>
             </Footer>
+            
         </Box>
+        
     )
 }
 
