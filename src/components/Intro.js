@@ -83,7 +83,7 @@ const Intro = () => {
                     <h2>Hi,</h2>
                     <h3>I'm Chamano.</h3>
                     <h6 className='para'>
-                    I've been working as a freelance web designer and developer for 3 years+.
+                    I've been working as a freelance web developer and designer for more than 3 years.
                     I love to design and make new web experiences for people and their businesses.</h6>
                 </Text>
             </SubBox>
